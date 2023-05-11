@@ -31,10 +31,10 @@ import { watch, ref } from 'vue';
     <form class="form-control">
       <div class="row">
         <div class="col">
-          <input class="form-control text-center" type="number" v-model="number1" @input="calcular" placeholder="Digite um número" />
+          <input class="form-control text-center" type="number" v-model="number1" placeholder="Digite um número" />
         </div>
         <div class="col-1">
-          <select class="form-control text-center" v-model="operador" @change="calcular">
+          <select class="form-control text-center" v-model="operador">
             <option class="text-center" value="+">+</option>
             <option class="text-center" value="-">-</option>
             <option class="text-center" value="*">*</option>
@@ -42,7 +42,7 @@ import { watch, ref } from 'vue';
           </select>
         </div>
         <div class="col">
-          <input class="form-control text-center" type="number" v-model="number2" @input="calcular" placeholder="Digite outro número" />
+          <input class="form-control text-center" type="number" v-model="number2" placeholder="Digite outro número" />
         </div>
       </div>
       <div class="row-5">
